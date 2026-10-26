@@ -208,6 +208,98 @@ body {
 
   .title {
     font-size: 18px;
+
+  /* ================= RESPONSIVE CELULAR ================= */
+
+@media (max-width: 600px) {
+
+    .card-body {
+        padding: 20px;
+    }
+
+
+    .field-row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+
+
+    .field-label {
+        flex: none;
+        width: 100%;
+        font-size: 13px;
+    }
+
+
+    .field-value {
+        width: 100%;
+        height: 38px;
+    }
+
+
+    /* Campos con moneda */
+    .field-value.field-money {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        height: 38px;
+        background: transparent;
+        border: none;
+    }
+
+
+    .field-money .currency {
+
+        position: static;
+
+        width: 38px;
+        height: 38px;
+
+        flex-shrink: 0;
+
+        background: #F8F9FA;
+
+        border: 1px solid #DEE2E6;
+
+        border-radius: 6px 0 0 6px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 14px;
+
+    }
+
+
+    .field-money .amount {
+
+        flex: 1;
+
+        height: 38px;
+
+        background: #E9ECEF;
+
+        border: 1px solid #DEE2E6;
+
+        border-left: none;
+
+        border-radius: 0 6px 6px 0;
+
+        padding: 0 14px;
+
+        display: flex;
+
+        align-items: center;
+
+        font-size: 14px;
+
+    }
+
+}
     line-height: 26px;
   }
 }
