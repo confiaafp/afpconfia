@@ -208,8 +208,10 @@ body {
 
   .title {
     font-size: 18px;
-
-  /* ================= RESPONSIVE CELULAR ================= */
+    line-height: 26px;
+  }
+}
+/* ================= RESPONSIVE CELULAR ================= */
 
 @media (max-width: 600px) {
 
@@ -299,7 +301,4 @@ body {
 
     }
 
-}
-    line-height: 26px;
-  }
 }
